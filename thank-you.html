@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| Thank You</title>
+    <link rel="shortcut icon" href="/public/assets/footer/logo.webp" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/public/styles/globals.css" />
+    <link rel="stylesheet" href="/public/styles/output.css" />
+
+    <!-- Adobe Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/qlw2ops.css" />
+
+    <!-- Components -->
+    <script src="/src/components/NavbarMobile.js" type="module"></script>
+    <script src="/src/components/NavbarDesktop.js" type="module"></script>
+    <script src="/src/components/Footer.js" type="module"></script>
+    <script src="/src/ui/Form.js" type="module"></script>
+  </head>
+  <body>
+    <navbar-mobile is-landing="false"></navbar-mobile>
+    <navbar-desktop is-landing="false"></navbar-desktop>
+
+    <main id="thank-you" class="flex flex-col gap-10 md:gap-12 lg:gap-14">
+      <style>
+        .ty-section {
+          background-image: url('/public/assets/thank-you/bg.webp');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .beat-animation {
+          animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      </style>
+      <div class="mt-[80px] w-full flex justify-center items-center h-max md:min-h-[70vh]">
+        <div class="sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1300px] w-full px-4 sm:px-6 md:px-8 lg:px-10 h-full flex justify-center items-center min-h-[400px]">
+          <section class="ty-section rounded-2xl overlay flex justify-center items-center w-full">
+            <div class="flex flex-col items-center gap-5 text-white text-center my-12 md:my-16 lg:my-32">
+              <img src="/public/assets/thank-you/heart.webp" class="size-[65px] object-contain beat-animation" alt="Heart symbol" title="Heart symbol" />
+              <h5 class="text-lg md:text-xl lg:text-2xl">We appreciate your details!</h5>
+              <p class="text-center font-light md:text-lg lg:text-[20px] w-full max-w-[400px] lg:max-w-[600px] xl:max-w-[800px]">
+                Soon enough our dedicated agents will contact you to confirm your booking for an unforgettable escape to Birmingham’s top casinos.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer-element in-landing="false"></footer-element>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: 'Rokkitt', sans-serif;
+}
+
+section,
+div,
+article {
+  scroll-margin-top: 110px;
+}

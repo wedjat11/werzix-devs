@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+
+  <link rel="shortcut icon" href="/public/assets/navbar/logo.png" type="image/x-icon" />
+
+  <meta name="description" content="" />
+  <meta name="author" content="[change_NAME]" />
+  <meta name="created" content="February 2025" />
+  <meta name="modified" content="February 2025" />
+
+  <!-- Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/qva8lkj.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <script type="module" src="/public/scripts/navbarScroll.js"></script>
+
+  <link rel="stylesheet" href="/public/styles/globals.css" />
+  <link rel="stylesheet" href="/public/styles/output.css" />
+
+  <script type="module" src="/src/components/NavbarDesktop.js"></script>
+  <script type="module" src="/src/components/NavbarMobile.js"></script>
+  <script type="module" src="/src/ui/Hero.js"></script>
+  <!-- <link rel="stylesheet" href="/public/styles/popup.css" /> -->
+</head>
+
+<body>
+  <!-- <div class="age-verification" id="ageVerification">
+      <div class="popup-content">
+        <h2 class="popup-title">+18 of Age</h2>
+        <p class="popup-text">Are you legally of age to access this website?</p>
+        <div class="button-group">
+          <button class="btn btn-yes" onclick="modalManager.verifyModal('ageVerification', true)">Yes I am</button>
+          <button class="btn btn-no" onclick="modalManager.verifyModal('ageVerification', false, 'https://www.google.com')">Not Yet</button>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- <div class="cookies-modal hidden" id="cookiesModal">
+      <article>
+        <h2 class="cookies-title">Cookies Disclaimer:</h2>
+        <p class="cookies-text">Our website uses cookies to improve your user experience. Please choose your preferences.</p>
+      </article>
+
+      <div class="cookies-buttons">
+        <button class="btn-yes btn" onclick="modalManager.verifyModal('cookiesModal', true)">Accept cookies</button>
+        <button class="btn-no btn" onclick="modalManager.verifyModal('cookiesModal', false)">Reject cookies</button>
+      </div>
+    </div> -->
+
+  <navbar-mobile is-landing="true"></navbar-mobile>
+  <navbar-desktop is-landing="true"></navbar-desktop>
+
+  <main class="flex flex-col gap-10 md:gap-12 lg:gap-14">
+    <div id="hero-section">
+      <hero-section></hero-section>
+    </div>
+
+    <div id="about-section">
+      <about-section></about-section>
+    </div>
+  </main>
+
+  <footer-element is-landing="true"></footer-element>
+</body>
+
+</html>
